@@ -26,10 +26,12 @@ form.addEventListener("submit", function (e) {
         .then((data) => {
             console.log("Success:", data);
             sessionStorage.setItem("token", data.token);
-            document.getElementById("redirecting").innerText = " Login successfull, redirecting to notes page"; 
-            setTimeout(() => {
-                window.location.href = "notes.html";
-            }, 2000);
+            if(data.msg != "User not found"){
+                document.getElementById("redirecting").innerText = " Login successfull, redirecting to notes page"; 
+                setTimeout(() => {
+                    window.location.href = "notes.html";
+                }, 2000);
+            }
         })
         .catch((error) => {
             console.error("Error:", error);
