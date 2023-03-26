@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .note{
+        border: 1px solid black;
+        padding: 5px;
+        width: fit-content;
+        min-width: 200px;
+
+    }
+    .noteContainer{
+        display: flex;
+    }
+</style>
+<body>
+        <h1>Add new notes</h1>
+        <form id="form">
+            <input type="text" placeholder="title" id="title" name="title"><br><br>
+            <textarea id="note" placeholder="note" name="note"></textarea><br><br>
+            <input type="text" placeholder="category" id="category" name="category"><br><br>
+            <input type="text" placeholder="author" id="author" name="author"><br><br>
+            <input type="submit" value="Add Note">
+        </form>
+        <h1>MY NOTES</h1>
+        
+        <div id="noteContainer">
+
+        </div>
+
+
+</body>
+<script src="../script/notes.js"></script>
+</html>
