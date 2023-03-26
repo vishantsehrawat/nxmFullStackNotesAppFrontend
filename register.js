@@ -27,10 +27,16 @@ form.addEventListener("submit", function (e) {
     }).then((response) => response.json())
         .then((data) => {
             console.log("Success:", data);
-            document.getElementById("redirecting").innerText = " Registration successfull, redirecting to login page"; 
-            setTimeout(() => {
-                window.location.href = "login.html";
-            }, 3000);
+            if (data.msg != "error in adding new user") {
+                document.getElementById("redirecting").innerText = " Registration successfull, redirecting to login page";
+                setTimeout(() => {
+                    window.location.href = "login.html";
+                }, 3000);
+            }
+            else{
+                document.getElementById("redirecting").innerText = " Registration Unsuccessfull, try again";
+
+            }
         })
         .catch((error) => {
             console.error("Error:", error);

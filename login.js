@@ -32,6 +32,10 @@ form.addEventListener("submit", function (e) {
                     window.location.href = "notes.html";
                 }, 2000);
             }
+            else{
+                document.getElementById("redirecting").innerText = " Login Error"; 
+
+            }
         })
         .catch((error) => {
             console.error("Error:", error);
