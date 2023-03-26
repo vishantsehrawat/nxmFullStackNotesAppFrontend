@@ -1,6 +1,6 @@
-const url = "http://dark-puce-dalmatian-sock.cyclic.app/note/notes";
+const url = "https://dark-puce-dalmatian-sock.cyclic.app/note/notes";
 // const url = "http://localhost:8080/note/notes";
-const addnoteurl = "http://dark-puce-dalmatian-sock.cyclic.app/note/addnote";
+const addnoteurl = "https://dark-puce-dalmatian-sock.cyclic.app/note/addnote";
 // const addnoteurl = "http://localhost:8080//note/addnote";
 
 let token = sessionStorage.getItem("token");

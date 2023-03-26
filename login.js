@@ -1,5 +1,5 @@
-const url = "http://dark-puce-dalmatian-sock.cyclic.app/user/login";
-// const url = "http://localhost:8080/user/login";
+const url = "https://dark-puce-dalmatian-sock.cyclic.app/user/login";
+// const url = "https://localhost:8080/user/login";
 //catching form 
 const form = document.getElementById("form");
 
